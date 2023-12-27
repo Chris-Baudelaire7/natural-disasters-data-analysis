@@ -5,9 +5,6 @@ from data_preparation import *
 
 
 def map_idps_km():
-    path = "/Users/new/Desktop/Natural Disasters/plotly_dash/data/deplacement/IDMC_GIDD_Disasters_Internal_Displacement_Data (1).xlsx"
-    idps_data_raw = pd.read_excel(path)
-
     idps_country = idps_data_raw.groupby(
         ["ISO3", "Country / Territory"], as_index=False)["Disaster Internal Displacements"].sum()
 
@@ -40,8 +37,6 @@ def map_idps_km():
 
 
 def map_idps_events():
-    path = "/Users/new/Desktop/Natural Disasters/plotly_dash/data/deplacement/IDMC_GIDD_Disasters_Internal_Displacement_Data (1).xlsx"
-    idps_data_raw = pd.read_excel(path)
 
     idps_occurrence_data = idps_data_raw.groupby(
         ["ISO3", "Country / Territory"], as_index=False).size()

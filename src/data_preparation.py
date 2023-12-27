@@ -69,7 +69,7 @@ month_data = data_period_count_pivot.sum().to_frame().rename(columns={0: "value"
 path = "data/hadcrut-surface-temperature-anomaly.csv"
 temp_country_data = pd.read_csv(path)
 
-file_path = '/Users/new/Dash_App/data/graph.txt'
+file_path = 'data/graph.txt'
 df_temp_anomaly = pd.read_csv(file_path, skiprows=4, delim_whitespace=True, names=[
                               'Year', 'No_Smoothing', 'Lowess'])
 df_temp_anomaly.dropna(inplace=True)

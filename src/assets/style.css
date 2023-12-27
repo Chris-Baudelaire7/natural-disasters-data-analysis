@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+body {
+    background-color: rgb(27, 27, 27);
+    font-family: Playfair Display, Merriweather, serif !important;
+    height: 100% !important;
+    min-height: 100% !important; 
+    max-height: 100% !important; 
+}
+
+
+.title {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 25px;
+    background-color:rgb(0, 0, 0);
+    padding:15px; 
+}
+
+
+.small-title-text {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.thin-dash {
+    height: 50px;
+    width: 4px;
+    background:rgba(220, 220, 220, 0.303);
+    margin: 0px 10px;
+}
+
+.title-header {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .5px
+}
+
+.subtitle-header {
+    color: rgb(165, 165, 165)
+}
+
+.button_class {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.card-text {
+    color: white;
+    text-align: center !important;
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+
+.overview {
+    max-height: 100%;
+    z-index: 10;
+}
+
+
+.left_content{
+    height: 100vh !important;
+    margin: 0;
+    text-align: center;
+}
+
+.right_content {
+    height: 100vh !important;
+    margin: 0;
+    box-shadow: 0px 0px 20px 15px rgba(10, 10, 10, 0.91);
+    z-index: 100;
+    overflow-y: scroll !important;
+    padding: 0 40px;
+    font-size: 13px !important;
+}
+
+
+
+.toastmap {
+    position: fixed !important;
+    top: 240px !important;
+    right: 20px !important; 
+    color: rgb(201, 201, 201);
+    width: 220px !important;
+    box-shadow: 1px 20px 50px 20px rgb(17, 17, 17);
+    font-size: 11px !important;
+    z-index: 999;
+} 
+
+.button {
+    box-shadow: 1px 20px 50px 20px rgb(17, 17, 17);
+}
+
+.mantine-10xdtcr {
+    position: absolute !important;
+}
+
+.toast-header {
+    font-size: 19px !important;
+    color: #fff !important;
+}
+
+
+.legendtoggle {
+    box-shadow: 1px 20px 50px 20px rgb(17, 17, 17) !important;
+}
+
+
+/* slider ------------------------------------------------------------------------- */
+
+.rc-slider-track {
+    background-color: firebrick;
+}
+
+.rc-slider-rail {
+    background-color: rgb(0, 0, 0)
+}
+
+.rc-slider-handle {
+    background-color: #000;
+    border-color: firebrick
+}
+
+.rc-slider-tooltip, .rc-slider-tooltip-arrow, .rc-slider-tooltip-inner {
+    background-color: rgb(0, 0, 0)
+}
+
+/* end slider ------------------------------------------------------------------------- */
+
+
+
+.btn-close {
+    width: 5px !important;
+    height: 5px !important;
+}
+
+.type {
+    display: inline-block !important;
+    color: rgb(232, 232, 232) !important;
+    cursor: pointer !important;
+}
+
+.type:hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+
+.mantine-HoverCard-dropdown, .crossfilter-style, .mantine-y29df9 {
+    background-color: transparent !important;
+}
+
+.div_hoverdata {
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0px 0px 20px 15px rgba(10, 10, 10, 0.91);
+    padding: 7px;
+}
+
+.HoverCard, .HoverCard_map, .mantine-1avyp1d {
+    position: relative !important;
+    width: 100% !important;
+}
+
+.card-image {
+    /* box-shadow: 10px 20px 50px 10px rgb(15, 15, 15); */
+    background:rgb(0, 0, 0);
+    color:white;
+    font-size: 11px !important;
+    width: auto;
+    opacity: 1;
+}
+
+
+.card-overview {
+    padding: 0;
+    border: none;
+    background: black
+}
+
+a {
+    color: whitesmoke;
+    font-size: 12px !important;
+}
+
+.mantine-Menu-itemLabel {
+    background-color: black !important;
+    border: none !important;
+}
+.mantine-Menu-itemLabel > * {
+    background-color: black !important;
+    border: none !important;
+}
+
+img {
+    height: 180px !important;
+}
+
+.crossfilter-style {
+    background-color:transparent;
+    border: none;
+    font-size: 14px;
+    align-items: center !important;
+}
+
+
+
+
+
+/* dcc Dropdown -------------------------------------------------------------------------------------*/
+
+.Select-control {
+    background-color: rgb(0, 0, 0) !important;
+    border: 1px solid #404040c4 !important;
+    padding: 0px !important;
+}
+
+.Select-value-label {
+    color: #fff !important;
+    font-family: serif !important;
+    font-size: 16px !important;
+}
+
+.Select-value-icon {
+    color: grey !important;
+    font-size: 14px !important;
+    padding: 0px !important;
+}
+
+.Select, .Select--multi, .is-open {
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+    font-family: serif !important;
+}
+
+.Select > * {
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(235, 235, 235) !important;
+    font-family: serif !important;
+    font-size: 16px !important;
+    border: 1px solid #40404068 !important;
+}
+
+/* end dcc Dropdown -------------------------------------------------------------------------------------*/
+
+
+/* Chip mantine ---------------------------------------------------------------------------------------- */
+
+.mantine-15po0m8  > * {
+  background-color: transparent !important;
+  color: white !important;
+  font-family: serif !important;
+  border: none !important; 
+  font-size: 12px !important;
+}
+
+
+.__mantine-ref-iconWrapper, .mantine-pibo38, .mantine-Chip-iconWrapper {
+  color: rgb(210, 28, 28) !important;
+}
+
+/* End Chip mantine ---------------------------------------------------------------------------------------- */
+
+
+
+/* offcanvas ---------------------------------------------------------------------------------------- */
+
+.offcanvas {
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0px 0px 20px 15px rgba(10, 10, 10, 0.91);
+    z-index: 9999999999999999999999
+}
+
+/* End offcanvas ---------------------------------------------------------------------------------------- */
+
+
+.about {
+    font-size: 13px;
+}
+
+#view-MapView, #mapboxgl-map, #deckgl-wrapper {
+    position: relative !important;
+    width: 100% !important;
+    height:36vh !important;
+}
+
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 150px;
+    box-shadow: 0px 0px 24px 10px rgba(0, 0, 0, 0.91);
+}
+
+.number {
+    color: white;
+    font-size: 25px !important;
+}
+
+.card-deaths-evolution {
+    padding-top: 15px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    box-shadow: 0px 2px 6px 2px rgba(17, 17, 17, 0.91);
+    background-color:rgb(44, 44, 44)
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: rgb(27, 27, 27);
+        font-family: Playfair Display, Merriweather, serif !important;
+    }
+
+    .left_content{
+        margin: 0;
+        text-align: center;
+        height: 100% !important;
+    }
+
+    .right_content {
+        margin: 0;
+        padding: 0 5px;
+        height: 100% !important;
+        font-size: 13px !important;
+        overflow-y: inherit !important;
+        z-index: 1
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .card-deaths-evolution {
+        display: none !important;
+    }
+}
+
+
+

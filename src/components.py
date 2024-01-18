@@ -118,13 +118,13 @@ list_group = dbc.ListGroup(
             ]
         ),
         
-        dbc.ListGroupItem(children=[
-            html.A(className="text-decoration-none", href="/Non-Climate-Related-Natural-Disasters", children=[
-                    html.H5("Non-Climate-Related Natural Disasters", className="mb-1"),
-                    html.P("Namely, Geophysical Natural Disasters", className="text-muted"),
-                ])
-            ]
-        ),
+        # dbc.ListGroupItem(children=[
+        #     html.A(className="text-decoration-none", href="/Non-Climate-Related-Natural-Disasters", children=[
+        #             html.H5("Non-Climate-Related Natural Disasters", className="mb-1"),
+        #             html.P("Namely, Geophysical Natural Disasters", className="text-muted"),
+        #         ])
+        #     ]
+        # ),
         
         dbc.ListGroupItem(children=[
             html.A(className="text-decoration-none", href="/Internal-displacement-due-to-natural-disasters", children=[

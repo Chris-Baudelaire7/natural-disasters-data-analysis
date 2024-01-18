@@ -25,11 +25,11 @@ def histogram_global_warm():
     hist_data = [x2, x1]
     group_labels = ["Local Regression Smoothing", 'Temperature Anomaly']
 
-    fig = ff.create_distplot(hist_data, group_labels, bin_size=.05, show_rug=False, histnorm="")
+    fig = ff.create_distplot(hist_data, group_labels, bin_size=.05, show_rug=False, histnorm="", colors=[hot_color, cold_color])
 
 
     fig.update_layout(
-        height=390,
+        height=380,
         bargap=0.1,
         hovermode="x",
         template="plotly_dark",
@@ -126,7 +126,7 @@ def distribution_land_ocean():
     hist_data = [x1, x2]
     group_labels = ["Ocean Temperature Anomaly", 'Land Temperature Anomaly']
 
-    fig = ff.create_distplot(hist_data, group_labels, bin_size=.05, show_rug=False, histnorm="") # curve_type='normal', 
+    fig = ff.create_distplot(hist_data, group_labels, bin_size=.05, show_rug=False, histnorm="", colors=[hot_color, cold_color]) # curve_type='normal', 
 
 
     fig.update_layout(

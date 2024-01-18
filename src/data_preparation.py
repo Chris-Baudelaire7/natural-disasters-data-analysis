@@ -27,20 +27,19 @@ def data_filter(df, category, choice):
     ]
     return data
 
-
-data_country_geojson_path = "data/countries.geojson"
-data_country_geojson = json.load(open(data_country_geojson_path, "r"))
-
 df = pd.read_csv("data/data.csv", low_memory=False)
 
-df_country_geojson_path = "data/countries.geojson"
-df_country_geojson = json.load(open(df_country_geojson_path, "r"))
+# data_country_geojson_path = "data/countries.geojson"
+# data_country_geojson = json.load(open(data_country_geojson_path, "r"))
 
-state_id_map = {}
+# df_country_geojson_path = "data/countries.geojson"
+# df_country_geojson = json.load(open(df_country_geojson_path, "r"))
 
-for feature in data_country_geojson["features"]:
-    feature["id"] = feature["properties"]["ISO_A3"]
-    state_id_map[feature["properties"]["ADMIN"]] = feature["id"]    
+# state_id_map = {}
+
+# for feature in data_country_geojson["features"]:
+#     feature["id"] = feature["properties"]["ISO_A3"]
+#     state_id_map[feature["properties"]["ADMIN"]] = feature["id"]    
     
     
 # analyse saisonnière

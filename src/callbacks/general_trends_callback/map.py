@@ -40,39 +40,39 @@ def mapbox():
 
 def scatter_mapbox_choropleth(): 
 
-    columns = ["Total Deaths", "No Injured", "Total Affected", "Total Damages ('000 US$)", "No Homeless"]
+    # columns = ["Total Deaths", "No Injured", "Total Affected", "Total Damages ('000 US$)", "No Homeless"]
     
-    l = df.groupby(["Country"])["Country"].count().to_frame()
+    # l = df.groupby(["Country"])["Country"].count().to_frame()
     
-    l = l.rename(
-        {key: value for key, value in zip(
-            wrong_countries_name, right_countries_name)}
-    )
+    # l = l.rename(
+    #     {key: value for key, value in zip(
+    #         wrong_countries_name, right_countries_name)}
+    # )
     
-    l = l.rename(columns={"Country": "Occurence"}).reset_index()
+    # l = l.rename(columns={"Country": "Occurence"}).reset_index()
     
-    a = set(state_id_map.keys())
-    b = set(l["Country"])
-    state = list(a.intersection(b))
+    # a = set(state_id_map.keys())
+    # b = set(l["Country"])
+    # state = list(a.intersection(b))
     
-    l = l[l["Country"].isin(state)]
+    # l = l[l["Country"].isin(state)]
     
-    data = df.groupby(["Country"])[columns].sum()
-    data = data.rename(
-        {key: value for key, value in zip(
-            wrong_countries_name, right_countries_name)}
-    )
+    # data = df.groupby(["Country"])[columns].sum()
+    # data = data.rename(
+    #     {key: value for key, value in zip(
+    #         wrong_countries_name, right_countries_name)}
+    # )
     
-    data = data.reset_index()
+    # data = data.reset_index()
     
-    a = set(state_id_map.keys())
-    b = set(data["Country"])
-    states = list(a.intersection(b))
+    # a = set(state_id_map.keys())
+    # b = set(data["Country"])
+    # states = list(a.intersection(b))
     
-    data = data[data["Country"].isin(states)]
+    #data = data[data["Country"].isin(states)]
     
-    data["id"] = data["Country"].apply(lambda x: state_id_map[x])
-    data["events"] = l["Occurence"].values
+    #data["id"] = data["Country"].apply(lambda x: state_id_map[x])
+    #data["events"] = l["Occurence"].values
 
     
     dfr = df.copy().dropna(subset=['Total Deaths', 'Total Affected'])
